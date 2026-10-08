@@ -152,6 +152,9 @@ def page_new():
         st.text_input("Drug allergies (comma-separated)", key="f_allergies")
         submitted = st.form_submit_button("Run medication review", type="primary", icon=":material/play_arrow:")
     if not submitted:
+        last = get_store().get_review(ss["last_run"]) if ss.get("last_run") else None
+        if last:   # keep the latest result visible across reruns (e.g. after typing the reviewer name)
+            result_card(last | {"pending": get_agent().pending(last["review_id"])})
         return
     split = lambda s: [x.strip() for x in (s or "").split(",") if x.strip()]  # noqa: E731
     case = {"age": ss.f_age, "sex": None if ss.f_sex == "—" else ss.f_sex, "conditions": split(ss.f_conditions),
@@ -165,6 +168,7 @@ def page_new():
         return
     out = run_live("review", case)
     if out:
+        ss.last_run = out["review_id"]
         result_card(out)
 
 
