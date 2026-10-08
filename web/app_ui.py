@@ -250,7 +250,7 @@ def page_workflow():
         visited = [s["node"] for s in trace]
         current = {"pharmacist_review": "human_review", "prescriber_escalation": "escalate",
                    "clarification": "await_clarification"}.get(pending["type"]) if pending else None
-        st.graphviz_chart(graph_dot(visited, current), use_container_width=True)
+        st.graphviz_chart(graph_dot(visited, current), width="stretch")
         with st.expander("Medications (normalisation)"):
             meds = state.get("medications", [])
             if meds:
@@ -440,7 +440,7 @@ def page_audit():
     m[1].metric("Tool calls", int((df["event"] == "tool_call").sum()))
     m[2].metric("Human decisions", int((df["event"] == "human_decision").sum()))
     m[3].metric("Reviews", df["review"].nunique())
-    st.dataframe(df, hide_index=True, use_container_width=True, height=520)
+    st.dataframe(df, hide_index=True, width="stretch", height=520)
     st.download_button("Export CSV", df.to_csv(index=False), file_name="polysafe_audit.csv", icon=":material/download:")
 
 
@@ -457,8 +457,7 @@ with st.sidebar:
     st.markdown("### 💊 PolySafe")
     st.caption("Agentic polypharmacy medication-safety review · decision support for clinicians and pharmacists")
     st.text_input("Reviewer name", key="reviewer", placeholder="e.g. Pharmacist A")
-    n_pending = len(get_store().list_reviews(PENDING))
-    st.metric("Waiting for a human", n_pending)
+    pending_slot = st.empty()   # filled after the page runs, so a decision made on this run is counted
     cfg = get_agent_config()["llm"]
     st.caption(f"Model: `{cfg['agent_model']}` (fallback `{cfg['agent_fallback_models'][0]}`)  \n"
                f"Embeddings: `{cfg['embedding_model']}`")
@@ -466,3 +465,4 @@ with st.sidebar:
                "medication; humans decide.")
 get_agent()   # start the agent (and MCP server) once per process
 nav.run()
+pending_slot.metric("Waiting for a human", len(get_store().list_reviews(PENDING)))
