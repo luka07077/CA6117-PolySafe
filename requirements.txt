@@ -1,0 +1,29 @@
+# CA6117 PolySafe — agentic polypharmacy medication-safety review
+# Python 3.12. Conda users: `conda env create -f environment.yml` (installs this file).
+# Agent / RAG / UI versions are the ones verified in the CA6124 HealthRec project.
+
+# --- Agent (LangChain / LangGraph / MCP) ---
+langchain==1.4.3
+langchain-core==1.6.7
+langchain-community==0.4.2
+langchain-openai==1.6.7
+langgraph==1.2.14
+langgraph-checkpoint-sqlite==3.1.1   # human-review interrupt: pause / resume across waits
+langchain-mcp-adapters==0.3.2
+mcp==1.30.0
+
+# --- RAG ---
+chromadb==1.5.9
+langchain-chroma==1.1.0
+langchain-text-splitters==1.1.3
+
+# --- Data & tools ---
+pandas==3.0.6
+rapidfuzz==3.14.6                    # fuzzy drug-name matching (misspellings)
+
+# --- Demo & utilities ---
+streamlit==1.65.0
+pyyaml==6.0.3
+python-dotenv==1.2.4
+requests==2.34.2
+pytest==9.1.1

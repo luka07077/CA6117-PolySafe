@@ -1,0 +1,47 @@
+class_code,class_name,duplication_group,duplication_severity,duplication_note
+VKA,Vitamin K antagonist anticoagulant,ANTICOAGULANT,critical,Two anticoagulants together greatly increase the risk of major bleeding
+DOAC,Direct oral anticoagulant,ANTICOAGULANT,critical,Two anticoagulants together greatly increase the risk of major bleeding
+ANTIPLATELET,Antiplatelet agent,,,
+NSAID,Non-steroidal anti-inflammatory drug,NSAID,high,Two NSAIDs add GI bleeding and kidney risk without extra benefit
+ANALGESIC,Non-opioid analgesic,,,
+OPIOID,Opioid analgesic,OPIOID,moderate,More than one opioid increases sedation and respiratory-depression risk; confirm it is intended
+PPI,Proton pump inhibitor,ACID_SUPPRESSANT,low,More than one acid-suppressing drug is rarely needed
+H2RA,H2-receptor antagonist,ACID_SUPPRESSANT,low,More than one acid-suppressing drug is rarely needed
+STATIN,HMG-CoA reductase inhibitor (statin),STATIN,moderate,Two statins increase myopathy risk without extra benefit
+CCB_DHP,Dihydropyridine calcium-channel blocker,CCB_DHP,low,Two drugs of the same class; confirm it is intended
+CCB_NONDHP,Non-dihydropyridine calcium-channel blocker,CCB_NONDHP,moderate,Two rate-limiting calcium-channel blockers add bradycardia and hypotension risk
+ACEI,ACE inhibitor,ACEI,moderate,Two ACE inhibitors add hypotension hyperkalaemia and kidney risk
+ARB,Angiotensin II receptor blocker,ARB,moderate,Two ARBs add hypotension hyperkalaemia and kidney risk
+LOOP_DIURETIC,Loop diuretic,,,
+THIAZIDE,Thiazide diuretic,,,
+K_SPARING_DIURETIC,Potassium-sparing diuretic / aldosterone antagonist,,,
+BETA_BLOCKER,Beta-blocker,BETA_BLOCKER,moderate,Two beta-blockers add bradycardia and hypotension risk
+ANTIARRHYTHMIC,Class III antiarrhythmic,,,
+CARDIAC_GLYCOSIDE,Cardiac glycoside,,,
+BIGUANIDE,Biguanide,,,
+SULFONYLUREA,Sulfonylurea,SULFONYLUREA,high,Two sulfonylureas add hypoglycaemia risk without extra benefit
+INSULIN,Insulin,,,
+SGLT2I,SGLT2 inhibitor,,,
+SSRI,Selective serotonin reuptake inhibitor,SSRI,high,Two SSRIs increase the risk of serotonin syndrome and bleeding
+TCA,Tricyclic antidepressant,,,
+ANTIDEPRESSANT_OTHER,Other antidepressant,,,
+BENZODIAZEPINE,Benzodiazepine,BENZODIAZEPINE,high,Two benzodiazepines add sedation falls and respiratory-depression risk
+Z_DRUG,Non-benzodiazepine hypnotic (Z-drug),,,
+ANTIPSYCHOTIC,Antipsychotic,ANTIPSYCHOTIC,moderate,Two antipsychotics add QT sedation and anticholinergic risk; confirm it is intended
+GABAPENTINOID,Gabapentinoid,GABAPENTINOID,moderate,Two gabapentinoids add sedation and respiratory-depression risk
+MACROLIDE,Macrolide antibiotic,,,
+FLUOROQUINOLONE,Fluoroquinolone antibiotic,,,
+SULFONAMIDE_COMBO,Sulfonamide antibiotic combination,,,
+AZOLE_ANTIFUNGAL,Azole antifungal,,,
+NITROIMIDAZOLE,Nitroimidazole antimicrobial,,,
+XANTHINE_OXIDASE_INHIBITOR,Xanthine oxidase inhibitor,,,
+ANTIGOUT,Anti-gout agent,,,
+THYROID_HORMONE,Thyroid hormone,,,
+ANTIMETABOLITE,Antimetabolite / DMARD,,,
+POTASSIUM_SUPPLEMENT,Potassium supplement,,,
+PDE5I,Phosphodiesterase-5 inhibitor,,,
+NITRATE,Organic nitrate,NITRATE,low,Two nitrates are rarely needed; confirm long-acting plus as-needed use is intended
+MOOD_STABILIZER,Mood stabiliser,,,
+CORTICOSTEROID,Systemic corticosteroid,,,
+ANTIHISTAMINE_1G,First-generation antihistamine,,,
+ANTIMUSCARINIC,Bladder antimuscarinic,,,

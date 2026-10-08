@@ -1,0 +1,130 @@
+synonym,drug_id,type
+coumadin,warfarin,brand
+jantoven,warfarin,brand
+warfarin sodium,warfarin,alias
+warfrin,warfarin,misspelling
+eliquis,apixaban,brand
+xarelto,rivaroxaban,brand
+pradaxa,dabigatran,brand
+aspirin,aspirin,alias
+asa,aspirin,alias
+acetylsalicylic acid,aspirin,alias
+low dose aspirin,aspirin,alias
+baby aspirin,aspirin,alias
+bayer aspirin,aspirin,brand
+plavix,clopidogrel,brand
+advil,ibuprofen,brand
+motrin,ibuprofen,brand
+nurofen,ibuprofen,brand
+ibuprofin,ibuprofen,misspelling
+aleve,naproxen,brand
+naprosyn,naproxen,brand
+naproxen sodium,naproxen,alias
+voltaren,diclofenac,brand
+cataflam,diclofenac,brand
+celebrex,celecoxib,brand
+tylenol,paracetamol,brand
+panadol,paracetamol,brand
+acetaminophen,paracetamol,alias
+apap,paracetamol,alias
+ultram,tramadol,brand
+tylenol with codeine,codeine,brand
+oxycontin,oxycodone,brand
+roxicodone,oxycodone,brand
+ms contin,morphine,brand
+prilosec,omeprazole,brand
+losec,omeprazole,brand
+omeprazol,omeprazole,misspelling
+protonix,pantoprazole,brand
+nexium,esomeprazole,brand
+pepcid,famotidine,brand
+zocor,simvastatin,brand
+simvastatine,simvastatin,misspelling
+lipitor,atorvastatin,brand
+crestor,rosuvastatin,brand
+norvasc,amlodipine,brand
+amlodapine,amlodipine,misspelling
+amlodipine besylate,amlodipine,alias
+cardizem,diltiazem,brand
+calan,verapamil,brand
+isoptin,verapamil,brand
+zestril,lisinopril,brand
+prinivil,lisinopril,brand
+altace,ramipril,brand
+vasotec,enalapril,brand
+cozaar,losartan,brand
+diovan,valsartan,brand
+lasix,furosemide,brand
+frusemide,furosemide,alias
+hctz,hydrochlorothiazide,alias
+microzide,hydrochlorothiazide,brand
+aldactone,spironolactone,brand
+lopressor,metoprolol,brand
+toprol xl,metoprolol,brand
+metoprolol succinate,metoprolol,alias
+metoprolol tartrate,metoprolol,alias
+concor,bisoprolol,brand
+zebeta,bisoprolol,brand
+tenormin,atenolol,brand
+cordarone,amiodarone,brand
+pacerone,amiodarone,brand
+lanoxin,digoxin,brand
+glucophage,metformin,brand
+metformine,metformin,misspelling
+glucotrol,glipizide,brand
+diamicron,gliclazide,brand
+lantus,insulin_glargine,brand
+insulin glargine,insulin_glargine,alias
+toujeo,insulin_glargine,brand
+jardiance,empagliflozin,brand
+zoloft,sertraline,brand
+celexa,citalopram,brand
+prozac,fluoxetine,brand
+lexapro,escitalopram,brand
+elavil,amitriptyline,brand
+remeron,mirtazapine,brand
+valium,diazepam,brand
+ativan,lorazepam,brand
+xanax,alprazolam,brand
+ambien,zolpidem,brand
+seroquel,quetiapine,brand
+haldol,haloperidol,brand
+neurontin,gabapentin,brand
+lyrica,pregabalin,brand
+biaxin,clarithromycin,brand
+klacid,clarithromycin,brand
+zithromax,azithromycin,brand
+cipro,ciprofloxacin,brand
+bactrim,trimethoprim_sulfamethoxazole,brand
+septra,trimethoprim_sulfamethoxazole,brand
+co-trimoxazole,trimethoprim_sulfamethoxazole,alias
+cotrimoxazole,trimethoprim_sulfamethoxazole,alias
+tmp-smx,trimethoprim_sulfamethoxazole,alias
+trimethoprim sulfamethoxazole,trimethoprim_sulfamethoxazole,alias
+sulfamethoxazole trimethoprim,trimethoprim_sulfamethoxazole,alias
+diflucan,fluconazole,brand
+flagyl,metronidazole,brand
+zyloprim,allopurinol,brand
+colcrys,colchicine,brand
+synthroid,levothyroxine,brand
+eltroxin,levothyroxine,brand
+levoxyl,levothyroxine,brand
+l-thyroxine,levothyroxine,alias
+trexall,methotrexate,brand
+klor-con,potassium_chloride,brand
+k-dur,potassium_chloride,brand
+kcl,potassium_chloride,alias
+potassium chloride,potassium_chloride,alias
+viagra,sildenafil,brand
+revatio,sildenafil,brand
+imdur,isosorbide_mononitrate,brand
+isosorbide mononitrate,isosorbide_mononitrate,alias
+ismn,isosorbide_mononitrate,alias
+nitrostat,nitroglycerin,brand
+gtn,nitroglycerin,alias
+glyceryl trinitrate,nitroglycerin,alias
+lithobid,lithium,brand
+lithium carbonate,lithium,alias
+deltasone,prednisone,brand
+benadryl,diphenhydramine,brand
+ditropan,oxybutynin,brand

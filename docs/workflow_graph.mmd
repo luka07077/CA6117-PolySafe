@@ -1,0 +1,56 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	guard_input(guard_input)
+	refuse(refuse)
+	parse_input(parse_input)
+	normalize_meds(normalize_meds)
+	clarify(clarify)
+	plan_checks(plan_checks)
+	run_checks(run_checks)
+	retrieve_evidence(retrieve_evidence)
+	assess_risk(assess_risk)
+	safety_reviewer(safety_reviewer)
+	revise(revise)
+	fallback(fallback)
+	compose_report(compose_report)
+	finalize(finalize)
+	human_review(human_review)
+	escalate(escalate)
+	await_clarification(await_clarification)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> guard_input;
+	assess_risk --> safety_reviewer;
+	await_clarification -.-> finalize;
+	await_clarification -.-> normalize_meds;
+	clarify --> await_clarification;
+	compose_report -.-> escalate;
+	compose_report -.-> finalize;
+	compose_report -.-> human_review;
+	escalate -.-> finalize;
+	fallback --> compose_report;
+	guard_input -.-> parse_input;
+	guard_input -.-> refuse;
+	human_review -.-> escalate;
+	human_review -.-> finalize;
+	normalize_meds -.-> clarify;
+	normalize_meds -.-> plan_checks;
+	parse_input --> normalize_meds;
+	plan_checks --> run_checks;
+	retrieve_evidence -.-> assess_risk;
+	retrieve_evidence -.-> compose_report;
+	revise --> assess_risk;
+	run_checks -.-> compose_report;
+	run_checks -.-> retrieve_evidence;
+	safety_reviewer -.-> compose_report;
+	safety_reviewer -.-> fallback;
+	safety_reviewer -.-> revise;
+	finalize --> __end__;
+	refuse --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc

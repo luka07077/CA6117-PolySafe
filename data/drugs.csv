@@ -1,0 +1,77 @@
+drug_id,generic_name,class_code,atc_code,cns_active,strong_anticholinergic,beers_flag,beers_note
+warfarin,Warfarin,VKA,B01AA03,0,0,1,Avoid starting as first-line for atrial fibrillation or VTE unless DOACs are contraindicated (higher major-bleeding risk in older adults)
+apixaban,Apixaban,DOAC,B01AF02,0,0,0,
+rivaroxaban,Rivaroxaban,DOAC,B01AF01,0,0,1,Avoid for long-term treatment of atrial fibrillation or VTE in favour of safer anticoagulants (higher major and GI bleeding)
+dabigatran,Dabigatran,DOAC,B01AE07,0,0,1,Use with caution: higher GI bleeding risk than some alternatives in older adults
+aspirin,Aspirin (low dose),ANTIPLATELET,B01AC06,0,0,1,Avoid starting for primary prevention of cardiovascular disease (bleeding risk outweighs benefit)
+clopidogrel,Clopidogrel,ANTIPLATELET,B01AC04,0,0,0,
+ibuprofen,Ibuprofen,NSAID,M01AE01,0,0,1,Avoid chronic use unless alternatives are not effective and a gastroprotective agent is used (GI bleeding and kidney injury)
+naproxen,Naproxen,NSAID,M01AE02,0,0,1,Avoid chronic use unless alternatives are not effective and a gastroprotective agent is used (GI bleeding and kidney injury)
+diclofenac,Diclofenac,NSAID,M01AB05,0,0,1,Avoid chronic use unless alternatives are not effective and a gastroprotective agent is used (GI bleeding and kidney injury)
+celecoxib,Celecoxib,NSAID,M01AH01,0,0,1,Avoid chronic use unless alternatives are not effective (kidney injury and cardiovascular risk)
+paracetamol,Paracetamol (acetaminophen),ANALGESIC,N02BE01,0,0,0,
+tramadol,Tramadol,OPIOID,N02AX02,1,0,1,Use with caution: can cause hyponatraemia and lowers the seizure threshold
+codeine,Codeine,OPIOID,R05DA04,1,0,0,
+oxycodone,Oxycodone,OPIOID,N02AA05,1,0,0,
+morphine,Morphine,OPIOID,N02AA01,1,0,0,
+omeprazole,Omeprazole,PPI,A02BC01,0,0,1,Avoid scheduled use for more than 8 weeks unless there is a clear indication (C. difficile infection bone loss fractures)
+pantoprazole,Pantoprazole,PPI,A02BC02,0,0,1,Avoid scheduled use for more than 8 weeks unless there is a clear indication (C. difficile infection bone loss fractures)
+esomeprazole,Esomeprazole,PPI,A02BC05,0,0,1,Avoid scheduled use for more than 8 weeks unless there is a clear indication (C. difficile infection bone loss fractures)
+famotidine,Famotidine,H2RA,A02BA03,0,0,0,
+simvastatin,Simvastatin,STATIN,C10AA01,0,0,0,
+atorvastatin,Atorvastatin,STATIN,C10AA05,0,0,0,
+rosuvastatin,Rosuvastatin,STATIN,C10AA07,0,0,0,
+amlodipine,Amlodipine,CCB_DHP,C08CA01,0,0,0,
+diltiazem,Diltiazem,CCB_NONDHP,C08DB01,0,0,0,
+verapamil,Verapamil,CCB_NONDHP,C08DA01,0,0,0,
+lisinopril,Lisinopril,ACEI,C09AA03,0,0,0,
+ramipril,Ramipril,ACEI,C09AA05,0,0,0,
+enalapril,Enalapril,ACEI,C09AA02,0,0,0,
+losartan,Losartan,ARB,C09CA01,0,0,0,
+valsartan,Valsartan,ARB,C09CA03,0,0,0,
+furosemide,Furosemide,LOOP_DIURETIC,C03CA01,0,0,0,
+hydrochlorothiazide,Hydrochlorothiazide,THIAZIDE,C03AA03,0,0,0,
+spironolactone,Spironolactone,K_SPARING_DIURETIC,C03DA01,0,0,0,
+metoprolol,Metoprolol,BETA_BLOCKER,C07AB02,0,0,0,
+bisoprolol,Bisoprolol,BETA_BLOCKER,C07AB07,0,0,0,
+atenolol,Atenolol,BETA_BLOCKER,C07AB03,0,0,0,
+amiodarone,Amiodarone,ANTIARRHYTHMIC,C01BD01,0,0,1,Avoid as first-line therapy for atrial fibrillation unless the patient also has heart failure or significant LV hypertrophy (more toxicity)
+digoxin,Digoxin,CARDIAC_GLYCOSIDE,C01AA05,0,0,1,Avoid as first-line for atrial fibrillation or heart failure; if used avoid doses above 0.125 mg/day (toxicity with reduced kidney function)
+metformin,Metformin,BIGUANIDE,A10BA02,0,0,0,
+glipizide,Glipizide,SULFONYLUREA,A10BB07,0,0,1,Avoid sulfonylureas as first- or second-line therapy (prolonged hypoglycaemia); if used prefer short-acting agents
+gliclazide,Gliclazide,SULFONYLUREA,A10BB09,0,0,1,Avoid sulfonylureas as first- or second-line therapy (prolonged hypoglycaemia); if used prefer short-acting agents
+insulin_glargine,Insulin glargine,INSULIN,A10AE04,0,0,0,
+empagliflozin,Empagliflozin,SGLT2I,A10BK03,0,0,0,
+sertraline,Sertraline,SSRI,N06AB06,1,0,0,
+citalopram,Citalopram,SSRI,N06AB04,1,0,0,
+fluoxetine,Fluoxetine,SSRI,N06AB03,1,0,0,
+escitalopram,Escitalopram,SSRI,N06AB10,1,0,0,
+amitriptyline,Amitriptyline,TCA,N06AA09,1,1,1,Avoid: highly anticholinergic and sedating; causes orthostatic hypotension
+mirtazapine,Mirtazapine,ANTIDEPRESSANT_OTHER,N06AX11,1,0,0,
+diazepam,Diazepam,BENZODIAZEPINE,N05BA01,1,0,1,Avoid: increased risk of cognitive impairment delirium falls fractures and motor-vehicle crashes
+lorazepam,Lorazepam,BENZODIAZEPINE,N05BA06,1,0,1,Avoid: increased risk of cognitive impairment delirium falls fractures and motor-vehicle crashes
+alprazolam,Alprazolam,BENZODIAZEPINE,N05BA12,1,0,1,Avoid: increased risk of cognitive impairment delirium falls fractures and motor-vehicle crashes
+zolpidem,Zolpidem,Z_DRUG,N05CF02,1,0,1,Avoid: adverse events similar to benzodiazepines (delirium falls fractures) with minimal improvement in sleep
+quetiapine,Quetiapine,ANTIPSYCHOTIC,N05AH04,1,0,1,Avoid unless non-pharmacological options have failed (stroke cognitive decline and mortality in dementia)
+haloperidol,Haloperidol,ANTIPSYCHOTIC,N05AD01,1,0,1,Avoid unless non-pharmacological options have failed (stroke cognitive decline and mortality in dementia)
+gabapentin,Gabapentin,GABAPENTINOID,N03AX12,1,0,0,
+pregabalin,Pregabalin,GABAPENTINOID,N03AX16,1,0,0,
+clarithromycin,Clarithromycin,MACROLIDE,J01FA09,0,0,0,
+azithromycin,Azithromycin,MACROLIDE,J01FA10,0,0,0,
+ciprofloxacin,Ciprofloxacin,FLUOROQUINOLONE,J01MA02,0,0,0,
+trimethoprim_sulfamethoxazole,Trimethoprim-sulfamethoxazole (co-trimoxazole),SULFONAMIDE_COMBO,J01EE01,0,0,0,
+fluconazole,Fluconazole,AZOLE_ANTIFUNGAL,J02AC01,0,0,0,
+metronidazole,Metronidazole,NITROIMIDAZOLE,J01XD01,0,0,0,
+allopurinol,Allopurinol,XANTHINE_OXIDASE_INHIBITOR,M04AA01,0,0,0,
+colchicine,Colchicine,ANTIGOUT,M04AC01,0,0,0,
+levothyroxine,Levothyroxine,THYROID_HORMONE,H03AA01,0,0,0,
+methotrexate,Methotrexate,ANTIMETABOLITE,L04AX03,0,0,0,
+potassium_chloride,Potassium chloride,POTASSIUM_SUPPLEMENT,A12BA01,0,0,0,
+sildenafil,Sildenafil,PDE5I,G04BE03,0,0,0,
+isosorbide_mononitrate,Isosorbide mononitrate,NITRATE,C01DA14,0,0,0,
+nitroglycerin,Nitroglycerin (glyceryl trinitrate),NITRATE,C01DA02,0,0,0,
+lithium,Lithium,MOOD_STABILIZER,N05AN01,0,0,0,
+prednisone,Prednisone,CORTICOSTEROID,H02AB07,0,0,0,
+prednisolone,Prednisolone,CORTICOSTEROID,H02AB06,0,0,0,
+diphenhydramine,Diphenhydramine,ANTIHISTAMINE_1G,R06AA02,1,1,1,Avoid: highly anticholinergic (confusion constipation urinary retention); tolerance develops when used as a hypnotic
+oxybutynin,Oxybutynin,ANTIMUSCARINIC,G04BD04,0,1,1,Avoid in patients with dementia or cognitive impairment; strongly anticholinergic

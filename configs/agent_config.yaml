@@ -1,0 +1,55 @@
+# ==========================================
+# PolySafe — runtime config
+# API keys live in .env (see .env.example), never in this file.
+# ==========================================
+
+# LLM settings (all models are served through the DashScope OpenAI-compatible endpoint;
+# base URL comes from DASHSCOPE_BASE_URL in .env). Switch a model by editing one line.
+llm:
+  agent_model: "deepseek-v4-pro-0813"             # parse_input / assess_risk / safety_reviewer (dev + demo)
+  agent_fallback_models: ["deepseek-v4.1-flash"]  # dev/demo only: tried when a call to agent_model fails
+  agent_temperature: 0.2                          # medication review needs stable output
+  helper_model: "deepseek-v4.1-flash"             # input guard + RAG query rewriting / reflection
+  helper_temperature: 0.0
+  eval_agent_model: "deepseek-v4-pro-0813"        # agent under test in formal evaluation (pinned, NO fallback)
+  eval_temperature: 0.0
+  embedding_model: "qwen3.7-text-embedding-flash" # "local" = Chroma's built-in all-MiniLM-L6-v2 (ONNX, no key)
+  enable_thinking: false                          # DeepSeek on DashScope thinks by default: off = 10-40x faster on long prompts
+  request_timeout: 60                             # fail over to the fallback model sooner on API latency spikes
+
+# Guardrails: rule check always runs; LLM moderation only for inputs the rules flag as suspicious
+guardrails:
+  llm_check: true                     # off in evaluation to save tokens
+
+# RAG settings (drug-safety evidence knowledge base)
+rag:
+  collection_name: "drug_evidence"
+  chunk_size: 600
+  chunk_overlap: 80
+  retrieval_top_k: 3
+  query_rewrite: false                # optional LLM step (helper model); off by default to save tokens
+  self_reflection: true               # helper-model filter of retrieved passages (off in evaluation)
+
+# MCP tool server (long-lived HTTP server: python -m tools.mcp_server)
+mcp:
+  host: 127.0.0.1
+  port: 8775
+  startup_timeout: 60
+
+# Safety reviewer: max number of times a draft may be sent back for revision
+review:
+  max_revisions: 2
+  evidence_min_severity: "moderate"   # findings at or above this severity get RAG evidence (low: database only)
+
+# Workflow switches (ablations in Step 6 evaluation)
+pipeline:
+  rag: true                           # false = no evidence retrieval (explanations from database facts only)
+  safety_reviewer: true               # rule check + LLM check of the draft
+  reviewer_llm_check: true            # LLM part of the reviewer (rule check always runs when the reviewer is on)
+
+# Severity -> route after the review (stop conditions / escalation policy, see data/evidence/14_polysafe_review_policy.md)
+routing:
+  critical: "escalate"                # stop autonomous workflow, escalate to prescriber
+  high: "human_review"                # pharmacist approval required before release
+  moderate: "finalize"                # released with warnings
+  low: "finalize"

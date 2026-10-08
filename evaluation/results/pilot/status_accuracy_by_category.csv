@@ -1,0 +1,7 @@
+category,full,llm_only
+duplication,100%,100%
+free_text,100%,100%
+known_high,100%,100%
+no_interaction,100%,100%
+prompt_injection,100%,0%
+unknown_drug,100%,100%

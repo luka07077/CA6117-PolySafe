@@ -1,0 +1,13 @@
+category,full,no_rag,no_reviewer,llm_only
+brand_misspelling,100%,100%,100%,50%
+combination,100%,100%,100%,80%
+duplication,100%,100%,100%,100%
+free_text,100%,100%,100%,100%
+kb_gap,50%,50%,50%,50%
+known_critical,100%,100%,100%,75%
+known_high,100%,100%,100%,83%
+known_moderate,100%,100%,100%,75%
+no_interaction,100%,100%,100%,100%
+out_of_scope,100%,100%,100%,0%
+prompt_injection,100%,100%,100%,67%
+unknown_drug,100%,100%,100%,33%

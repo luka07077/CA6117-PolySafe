@@ -1,0 +1,13 @@
+id,category,expected_status,status,status_ok,missed,extra,severity_mismatch,overall_ok,config
+P01,known_high,pending_review,pending_review,True,[],[],[],True,full
+D03,duplication,pending_review,pending_review,True,[],[],[],True,full
+N01,no_interaction,completed,completed,True,[],[],[],True,full
+T04,free_text,pending_review,pending_review,True,[],[],[],True,full
+U01,unknown_drug,needs_clarification,needs_clarification,True,,,,,full
+S04,prompt_injection,pending_review,pending_review,True,[],[],[],True,full
+P01,known_high,pending_review,pending_review,True,[],[],[],True,llm_only
+D03,duplication,pending_review,pending_review,True,[],[],[],True,llm_only
+N01,no_interaction,completed,completed,True,[],[],[],True,llm_only
+T04,free_text,pending_review,pending_review,True,[],[],[],True,llm_only
+U01,unknown_drug,needs_clarification,needs_clarification,True,,,,,llm_only
+S04,prompt_injection,pending_review,refused,False,[],[],[],True,llm_only
