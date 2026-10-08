@@ -1,5 +1,5 @@
 # CA6117 PolySafe — agentic polypharmacy medication-safety review
-# Python 3.12. Conda users: `conda env create -f environment.yml` (installs this file).
+# Python 3.12. Install: `pip install -r requirements.txt` (in a conda env or venv, see README).
 # Agent / RAG / UI versions are the ones verified in the CA6124 HealthRec project.
 
 # --- Agent (LangChain / LangGraph / MCP) ---

@@ -47,8 +47,9 @@ Tested on macOS (Apple silicon) with Python 3.12; Linux works the same way. No G
 
 ```bash
 cd polysafe
-conda env create -f environment.yml      # creates the "ca6117_polysafe" environment (Python 3.12, pinned versions)
+conda create -n ca6117_polysafe python=3.12 -y
 conda activate ca6117_polysafe
+pip install -r requirements.txt          # pinned versions
 ```
 
 Without Conda: `python3.12 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt`.
@@ -314,10 +315,11 @@ polysafe/
 ├── evaluation/               # test cases, EVALUATION.md, results/ (per-run tables and raw results)
 ├── tests/                    # 86 tests
 ├── docs/                     # figures, exported workflow graph
-└── environment.yml · requirements.txt · .env.example
+└── requirements.txt · .env.example
 ```
 
-Generated and git-ignored: `data/polysafe.db`, `data/chroma_db/`, `data/runtime/` (reviews, audit log, checkpoints),
+`data/polysafe.db` and `data/chroma_db/` are included (rebuild them with step 3). Generated and git-ignored:
+`data/runtime/` (reviews, audit log, checkpoints),
 `outputs/logs/`, `evaluation/results/llm_cache.sqlite`, `.env`.
 
 ---
